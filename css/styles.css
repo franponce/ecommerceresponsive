@@ -1,0 +1,63 @@
+/* ====== COLORES ====== */
+
+:root{
+    --black: #222;
+    --white: #fff;
+    --blue: #0751a6;
+    --yellow: #d3b717;
+    --red: #e71247;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--black);
+    background-color: var(--white);
+}
+h1,
+h2,
+h3,
+h4{
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul,
+li{
+    list-style: none;
+}
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        padding: 0 3rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 5rem;
+    }
+}
+
+/* NAVIGATION */
