@@ -181,3 +181,50 @@ li{
     font-weight: 700;
     font-size: 1.8rem;
 }
+
+/* Carrito */
+
+.carrito__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+    visibility: hidden;
+    z-index: 2;
+}
+.carrito{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    scale(.5);
+    width: 60%;
+    height: 80%;
+    padding: 1.6rem;
+    border-radius: 2rem;
+    overflow-x: scroll;
+    background-color: #f2f2f2;
+    opacity: 0;
+    visibility: hidden;
+    transform: all 300ms easy-in-out;
+}
+.carrito.show{
+    transform: translate(-50%, -50%);
+    scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.carrito__overlay.show{
+    visibility: visible;
+}
+.carrito .close__carrito{
+    font-size: 4.5rem;
+    cursor: pointer;
+    color: var(--black);
+    transform: all 300ms ease-in-out;
+}
+.carrito .close__carrito:hover{
+    color: var(--red);
+}
